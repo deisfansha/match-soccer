@@ -1,0 +1,1621 @@
+CRITICAL - 2023-06-19 11:18:12 --> Invalid file: "klasemen.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Klasemen.php(14): view()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:03:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:03:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:04:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:04:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:04:48 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:04:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:04:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:04:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:04:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:04:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:14 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:16 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:27 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:27 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:28 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:06:30 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:06:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:07:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:07:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:07:51 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:07:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:07:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:07:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:07:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:07:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:10:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:10:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:11:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:11:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:12:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:12:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:12:44 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:12:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:14:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:14:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:14:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:14:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:14:33 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:14:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:14:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:14:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:14:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:14:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:14:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:14:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:14:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:14:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:14:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:14:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:16:03 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:16:03 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:16:28 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:16:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:16:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:16:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+ERROR - 2023-06-19 12:19:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in G:\Codeigniter 4\klasemen\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 G:\Codeigniter 4\klasemen\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 G:\Codeigniter 4\klasemen\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 G:\Codeigniter 4\klasemen\app\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+#4 G:\Codeigniter 4\klasemen\app\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+#5 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+#6 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#7 G:\Codeigniter 4\klasemen\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#8 G:\Codeigniter 4\klasemen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Codeigniter 4\klasemen\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-06-19 12:19:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Models\ModelKlasemen.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Klasemen.php(19): App\Models\ModelKlasemen->tampil_data()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
+CRITICAL - 2023-06-19 23:35:31 --> Call to undefined function form_open()
+in APPPATH\Views\v_klasemen.php on line 33.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Klasemen.php(21): view()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Klasemen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\Codeigniter 4\\klasemen\\public\\index.php')
